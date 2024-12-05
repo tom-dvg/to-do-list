@@ -1,0 +1,175 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    background-color: #f0f0f0; /* Fondo claro */
+    color: #333; /* Texto oscuro para contraste */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal de la aplicación */
+.contenedor-tareas {
+    flex-grow: 1;
+    background: #e0e0e0; /* Fondo claro para las tareas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del formulario */
+#entrada-tarea, #entrada-grupo {
+    width: 70%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Color moderno para los botones */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el cursor */
+}
+
+/* Lista de tareas */
+#lista-tareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-tareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#lista-tareas li.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Botones dentro de cada tarea */
+#lista-tareas button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lista-tareas .completar {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+#lista-tareas .eliminar {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+#lista-tareas .completar:hover {
+    background-color: #218838;
+}
+
+#lista-tareas .eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Contenedor de cada tarea */
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contenedor de los botones */
+.botones-tarea {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botón de completar */
+.boton-completar {
+    padding: 5px 10px;
+    background-color: #28a745; /* Verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton-completar:hover {
+    background-color: #218838; /* Verde oscuro */
+}
+
+/* Botón de eliminar */
+.boton-eliminar {
+    padding: 5px 10px;
+    background-color: #dc3545; /* Rojo */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton-eliminar:hover {
+    background-color: #c82333; /* Rojo oscuro */
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #ffffff; /* Fondo claro para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de grupos de tareas */
+.contenedor-grupos {
+    width: 200px;
+    margin-right: 20px;
+    background: #e0e0e0; /* Fondo claro para los grupos */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de grupos */
+#lista-grupos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-grupos li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#lista-grupos li:hover {
+    background-color: #f0f0f0;
+}

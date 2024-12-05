@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de tareas</title>
+        <!-- Enlace a Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Enlace al archivo de estilos -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="contenedor-principal">
+            <div class="contenedor-grupos">
+                <h2>Grupos de Tareas</h2>
+                <form id="formulario-grupo">
+                    <input
+                        type="text"
+                        id="entrada-grupo"
+                        placeholder="Escribe un nuevo grupo..."
+                        required>
+                    <button type="submit">Añadir Grupo</button>
+                </form>
+                <ul id="lista-grupos"></ul>
+            </div>
+            <div class="contenedor-tareas">
+                <!-- Título de la aplicación -->  
+                <h1>Lista de Tareas</h1>
+
+                <!-- Formulario para agregar nuevas tareas-->
+                <form id="formulario-tarea">
+                    <input
+                        type="text"
+                        id="entrada-tarea"
+                        placeholder="Escribe una nueva tarea..."
+                        required>
+                    <button type="submit">Añadir</button>
+                </form>
+
+                <!--Lista donde se mostrarán las tareas-->
+                <ul id="lista-tareas"></ul>
+            </div>
+        </div>
+
+        <!--Enlace al archivo de JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>
